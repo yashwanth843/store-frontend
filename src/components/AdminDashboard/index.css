@@ -1,0 +1,227 @@
+.admin-dashboard {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 20px;
+  font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #1f2937;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(15, 23, 42, 0.06);
+}
+
+
+.admin-dashboard h2 {
+  font-size: 1.6rem;
+  margin: 0 0 18px 0;
+  color: #0f172a;
+  letter-spacing: -0.2px;
+}
+
+
+.stats {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.stats p {
+  margin: 0;
+  padding: 14px 18px;
+  background: linear-gradient(90deg,#f1f5f9,#eef2ff);
+  border-radius: 10px;
+  min-width: 160px;
+  box-shadow: 0 2px 6px rgba(15,23,42,0.03);
+  font-weight: 600;
+  color: #0b1220;
+}
+
+
+.add-store-form,
+.add-user-form {
+  background: #fbfdff;
+  border: 1px solid #eef2ff;
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  display: block;
+}
+
+
+.add-store-form h3,
+.add-user-form h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.05rem;
+  color: #0f172a;
+}
+
+
+.add-store-form > input,
+.add-user-form > input,
+.add-user-form > select {
+  display: inline-block;
+  width: calc(33.333% - 10px);
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d7e0f6;
+  background: #fff;
+  box-sizing: border-box;
+  font-size: 0.95rem;
+  color: #0f172a;
+}
+
+
+.add-user-form > input[type="password"] {
+  width: calc(33.333% - 10px);
+}
+
+
+.add-user-form > select {
+  width: calc(16.666% - 10px);
+  vertical-align: middle;
+}
+
+
+.add-store-form button,
+.add-user-form button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform .06s ease, background .12s ease;
+}
+
+.add-store-form button:hover,
+.add-user-form button:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+
+@media (max-width: 900px) {
+  .add-store-form > input,
+  .add-user-form > input,
+  .add-user-form > select {
+    width: 100%;
+    margin-right: 0;
+  }
+  .add-user-form > select { width: 100%; }
+}
+
+
+.table-container {
+  overflow-x: auto;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #e6eefc;
+  padding: 8px;
+  margin-top: 8px;
+  box-shadow: 0 2px 6px rgba(15,23,42,0.02);
+}
+
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px; 
+  font-size: 0.95rem;
+}
+
+.table-container th,
+.table-container td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid #eef2ff;
+  vertical-align: middle;
+}
+
+
+.table-container thead th {
+  background: linear-gradient(90deg,#2f6fba,#2b66b3);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  position: sticky;
+  top: 0;
+}
+
+
+.table-container tbody tr:nth-child(odd) {
+  background: #ffffff;
+}
+.table-container tbody tr:nth-child(even) {
+  background: #fbfdff;
+}
+.table-container tbody tr:hover {
+  background: #f1f7ff;
+}
+
+
+.table-container td:nth-child(4),
+.table-container th:nth-child(4) {
+  width: 120px;
+  text-align: center;
+}
+
+
+@media (max-width: 600px) {
+  .table-container th, .table-container td {
+    padding: 10px 8px;
+    font-size: 0.88rem;
+  }
+}
+
+
+.store-list-admin input[placeholder],
+.user-list-admin input[placeholder] {
+  padding: 8px 10px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  border: 1px solid #dfe8ff;
+  width: 220px;
+}
+
+
+.user-list-admin select {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #dfe8ff;
+}
+
+
+h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+}
+
+
+input, select, textarea {
+  color: #0b1220;
+}
+
+
+input:focus, select:focus, button:focus {
+  outline: 3px solid rgba(37,99,235,0.15);
+  outline-offset: 2px;
+}
+
+
+.table-empty {
+  padding: 18px;
+  color: #6b7280;
+  font-style: italic;
+}
+
+
+.admin-dashboard .add-store-form,
+.admin-dashboard .add-user-form,
+.admin-dashboard .store-list-admin,
+.admin-dashboard .user-list-admin {
+  margin-bottom: 20px;
+}

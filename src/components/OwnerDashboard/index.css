@@ -1,0 +1,184 @@
+.owner-dashboard {
+  max-width: 980px;
+  margin: 20px auto;
+  padding: 18px;
+  font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #0f172a;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.05);
+}
+
+
+.owner-dashboard h2 {
+  margin: 0 0 14px 0;
+  font-size: 1.5rem;
+  color: #0b1220;
+}
+.owner-dashboard h3 {
+  margin: 8px 0 12px 0;
+  font-size: 1.1rem;
+  color: #0b1220;
+}
+.owner-dashboard h4 {
+  margin: 0 0 8px 0;
+  font-size: 1rem;
+}
+
+
+.owner-password {
+  background: #fbfdff;
+  border: 1px solid #eef2ff;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 18px;
+}
+
+.owner-password .pw-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.owner-password input[type="password"] {
+  flex: 1 1 220px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d7e0f6;
+  background: #fff;
+  font-size: 0.95rem;
+  color: #0b1220;
+  box-sizing: border-box;
+}
+
+.owner-password button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .12s ease, transform .06s ease;
+}
+
+.owner-password button:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.owner-password small {
+  display: block;
+  margin-top: 8px;
+  color: #475569;
+  font-size: 0.9rem;
+}
+
+
+.owner-password button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+
+.owner-store-card {
+  margin-bottom: 18px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(15,23,42,0.04);
+  border: 1px solid #eef6ff;
+}
+
+
+.owner-store-card .card-head {
+  padding: 12px 14px;
+  background: linear-gradient(90deg,#2f6fba,#2b66b3);
+  color: #fff;
+}
+
+.owner-store-card .card-head strong {
+  display: block;
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.owner-store-card .card-head .address {
+  opacity: 0.95;
+  font-size: 0.92rem;
+}
+
+
+.owner-store-card .card-body {
+  padding: 12px 14px;
+  background: #fff;
+}
+
+
+.owner-store-card table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+  font-size: 0.95rem;
+}
+
+.owner-store-card thead th {
+  text-align: left;
+  padding: 10px;
+  background: #f0f6fb;
+  border-bottom: 1px solid #e6eef6;
+  font-weight: 700;
+}
+
+.owner-store-card tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #f2f6fa;
+}
+
+
+.owner-store-card tbody tr:nth-child(even) {
+  background: #fbfdff;
+}
+.owner-store-card tbody tr:hover {
+  background: #f6fbff;
+}
+
+
+@media (max-width: 760px) {
+  .owner-password .pw-row {
+    flex-direction: column;
+  }
+  .owner-password input[type="password"] {
+    width: 100%;
+  }
+  .owner-store-card thead th, .owner-store-card tbody td {
+    padding: 8px;
+    font-size: 0.92rem;
+  }
+}
+
+
+input:focus, button:focus {
+  outline: 3px solid rgba(37,99,235,0.12);
+  outline-offset: 2px;
+}
+
+
+.owner-dashboard .no-data {
+  padding: 12px;
+  color: #64748b;
+  font-style: italic;
+}
+
+
+.avg-badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 4px 8px;
+  background: rgba(255,255,255,0.12);
+  border-radius: 999px;
+  font-weight: 700;
+  color: #fff;
+  font-size: 0.9rem;
+}

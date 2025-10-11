@@ -1,0 +1,50 @@
+.update-password-container {
+  width: 90%;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: Arial, sans-serif;
+}
+
+.update-password-container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+.update-password-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.update-password-container input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+}
+
+.update-password-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.25s ease-in-out;
+}
+
+.update-password-container button:hover {
+  background: #0056b3;
+}

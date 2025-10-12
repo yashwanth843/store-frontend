@@ -19,6 +19,15 @@ Backend GitHub Repo: https://github.com/yashwanth843/StoreProject-Backend
 
 Live Frontend Deployment: https://store-rating-rating-project.netlify.app
 
+✅ Default Admin Login
+
+Use the following credentials to log in as the admin:
+
+
+  Email: "admin@example.com",
+  Password: "Admin@123"
+
+
 ✅ Features
 👤 User
 

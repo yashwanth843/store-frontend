@@ -10,9 +10,6 @@ Database: SQLite
 Auth: JWT (JSON Web Token)
 
 🔗 Project Links
-
-Update these when ready:
-
 Frontend GitHub Repo: https://github.com/yashwanth843/store-frontend
 
 Backend GitHub Repo: https://github.com/yashwanth843/StoreProject-Backend

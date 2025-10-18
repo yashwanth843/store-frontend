@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+⭐ Store Rating Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack web application where Users can rate stores, Owners can manage their stores, and Admins can manage users and stores.
 
-## Available Scripts
+🚀 Tech Stack
 
-In the project directory, you can run:
+Frontend: React JS
+Backend: Node.js + Express
+Database: SQLite 
+Auth: JWT (JSON Web Token)
 
-### `npm start`
+🔗 Project Links
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Update these when ready:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Frontend GitHub Repo: https://github.com/yashwanth843/store-frontend
 
-### `npm test`
+Backend GitHub Repo: https://github.com/yashwanth843/StoreProject-Backend
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Live Frontend Deployment: https://store-rating-rating-project.netlify.app
 
-### `npm run build`
+✅ Default Admin Login
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Use the following credentials to log in as the admin:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  Email: "admin@example.com",
+  Password: "Admin@123"
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+✅ Features
+👤 User
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Login / Signup
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+View all stores
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Submit & update ratings (1–5)
 
-## Learn More
+Update password
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🏪 Store Owner
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Dashboard to manage own stores
 
-### Code Splitting
+View ratings
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+🛠 Admin
 
-### Analyzing the Bundle Size
+Add stores
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Add users
 
-### Making a Progressive Web App
+View all stores
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+View all users
 
-### Advanced Configuration
+Delete entries
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+📦 Folder Structure
+root/
+│
+├── frontend/    # React App
+├── backend/     # Node/Express API
+└── README.md
 
-### Deployment
+⚙️ Backend Setup (Local)
+cd backend
+npm install
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+Server runs on: http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Make sure your database is configured SQLite.
+
+🖥 Frontend Setup (Local)
+cd frontend
+npm install
+npm start
+
+
+
+
+🔐 Authentication
+
+JWT stored in cookies (token, role)
+
+Role-based rendering in App.js
+
+📌 API Endpoints (Sample)
+Auth
+POST /api/auth/signup
+POST /api/auth/login
+
+Stores
+GET /api/stores
+POST /api/stores      (Admin/Owner)
+
+Ratings
+POST /api/ratings
+
+Users
+GET /api/users             (Admin)
+POST /api/users/update-password
+
